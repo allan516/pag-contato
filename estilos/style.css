@@ -60,7 +60,6 @@ main > section {
 
 footer {
     position: absolute;
-    top: calc(100% - 20px);
     height: 53.5px;
     width: 100%;
     background-color: black;
@@ -71,4 +70,5 @@ footer > p {
     font-style: italic; 
     text-align: center;
     padding: 20px;
+    background-color: black;
 }
