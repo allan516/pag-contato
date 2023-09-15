@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+    <header>
+        <menu>           
+            <li><span id="botaoMenu" class="material-symbols-outlined">menu</span></li>
+            <ul id="opcoes">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem sou eu</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Linkedin</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolores expedita odio velit deserunt in saepe quod hic maiores illum qui exercitationem, odit, amet quibusdam ipsum aut. Tempore, voluptas quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, architecto. Laborum iusto veniam quam vitae! Porro pariatur ex modi nostrum eos rerum deserunt veritatis expedita, at maiores non quod ipsum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat excepturi vitae, sit vero numquam architecto perferendis modi minus expedita eligendi, ut quae quisquam quo, commodi consequuntur sapiente deserunt praesentium assumenda.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; Allan Mendes</p>
+    </footer>
+
+    <script>
+        let menuVisivel = false;
+
+        let opcoes = document.getElementById('opcoes');
+        let botaoMenu = document.getElementById('botaoMenu');
+
+        botaoMenu.addEventListener('click', function() {
+            if (menuVisivel) {
+                opcoes.style.display = 'none';
+                menuVisivel = false;
+            } else {
+                opcoes.style.display = 'block';
+                menuVisivel = true;
+            }
+        })
+
+        
+    </script>
+</body>
+</html>
