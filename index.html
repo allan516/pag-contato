@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <header>
+    <header id="cabecalho">
         <menu>           
             <li><span id="botaoMenu" class="material-symbols-outlined">menu</span></li>
             <ul id="opcoes">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem sou eu</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Linkedin</a></li>
+                <li><a href="imagens/fundo.jpg" target="iframe" rel="internal">Home</a></li>
+                <li><a href="#" target="iframe" rel="internal">Quem sou eu</a></li>
+                <li><a href="#" target="iframe" rel="internal">Projetos</a></li>
+                <li><a href="#" target="iframe" rel="internal">Contato</a></li>
+                <li><a href="#" target="iframe" rel="internal">GitHub</a></li>
+                <li><a href="#" target="iframe" rel="internal">Linkedin</a></li>
                 
             </ul>
         </menu>
@@ -41,15 +41,14 @@
     <script>
         let menuVisivel = false;
 
-        let opcoes = document.getElementById('opcoes');
-        let botaoMenu = document.getElementById('botaoMenu');
-
         botaoMenu.addEventListener('click', function() {
             if (menuVisivel) {
                 opcoes.style.display = 'none';
+                cabecalho.style.height = '150px';
                 menuVisivel = false;
             } else {
                 opcoes.style.display = 'block';
+                cabecalho.style.height = '340px';
                 menuVisivel = true;
             }
         })
