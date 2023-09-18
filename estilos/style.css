@@ -61,9 +61,18 @@ main {
     width: 100%; 
     background-size: cover;
 }
+ /* Configurações das seções */
 
 main > section {
     padding: 20px;
+}
+
+main .secoes {
+    background-color: lightgray;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px black;
+    opacity: .75;
 }
 
 /* Configurações do rodapé */
