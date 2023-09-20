@@ -66,12 +66,12 @@ main {
 main > section {
     padding: 20px;
     max-width: 768px;
-    margin: auto;
+    margin: 0px 10px;
 }
 
 main .secoes {
     background-color: lightgray;
-    margin: 20px auto;
+    margin: 20px 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 2px black;
     opacity: .75;
