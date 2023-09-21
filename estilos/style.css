@@ -15,7 +15,7 @@ body, html {
 
 header {
     background-image: linear-gradient(to right, #800080, #000000);
-    height: 150px;   
+    height: 150px;
 }
 
 /* Configurações do menu e links para seções */
@@ -56,20 +56,25 @@ menu > ul > li > a {
 }
 
 main {
+    position: relative;
     min-height: 683px;
     background: url(../imagens/fundo.jpg) no-repeat left bottom;
     width: 100%; 
     background-size: cover;
 }
+
+#praCima {
+    position: sticky;
+    top: 80vh;
+    left: 90%;
+    z-index: 1;
+    cursor: pointer;
+}
  /* Configurações das seções */
 
-main > section {
-    padding: 20px;
-    max-width: 768px;
-    margin: 0px 10px;
-}
-
 main .secoes {
+    max-width: 768px;
+    padding: 20px;
     background-color: lightgray;
     margin: 20px 5px;
     border-radius: 8px;
@@ -106,6 +111,10 @@ section > img:hover {
 
 #projetos > ul > li {
     padding: 20px;
+}
+
+#projetos > ul > li > p {
+    padding: 10px;
 }
 
 /* Configurações do rodapé */

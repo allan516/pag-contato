@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -15,7 +16,6 @@
         <menu>           
             <li><span id="botaoMenu" class="material-symbols-outlined">menu</span></li>
             <ul id="opcoes">
-                <li><a href="#home" rel="internal">Home</a></li>
 
                 <li><a href="#quemSouEu">Quem sou eu</a></li>
 
@@ -31,11 +31,8 @@
     </header>
 
     <main>
-        <section id="home">
-            <p>
-                Algum texto
-            </p> 
-        </section>
+        <a href="#cabecalho"><span class="material-symbols-outlined" id="praCima">arrow_upward_alt</span></a>
+        
 
         <section id="quemSouEu" class="secoes">
             <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
@@ -118,9 +115,15 @@
 
         <section id="contato" class="secoes">
             <h1>Contato</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium illo dolor commodi, aliquam a deleniti ad atque laboriosam quasi quis, earum perferendis nesciunt error. Animi dolore laudantium commodi temporibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium illo dolor commodi, aliquam a deleniti ad atque laboriosam quasi quis, earum perferendis nesciunt error. Animi dolore laudantium commodi temporibus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laudantium illo dolor commodi, aliquam a deleniti ad atque laboriosam quasi quis, earum perferendis nesciunt error. Animi dolore laudantium commodi temporibus.</p>
+            <form action="mensagem.php" method="post">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <label for="iemail">Email </label>
+                    <input type="email" name="email" id="iemail">
+                    <label for="itext">Mensagem</label>
+                    <textarea name="text" id="itext" cols="30" rows="5"></textarea>
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
@@ -138,7 +141,7 @@
                 menuVisivel = false;
             } else {
                 opcoes.style.display = 'block';
-                cabecalho.style.height = '340px';
+                cabecalho.style.height = '315px';
                 menuVisivel = true;
             }
         })
