@@ -79,6 +79,10 @@ main .secoes {
     box-shadow: 1px 1px 2px black;
 }
 
+main .secoes > h1 {
+    padding: 15px;
+}
+
 /* config aba quem sou eu */
 
 section > .fotoPerfil {
@@ -90,6 +94,18 @@ section > .fotoPerfil {
 
 section > img:hover {
     border: 3px solid white;
+}
+
+/* config projetos */
+
+#projetos > ul {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+}
+
+#projetos > ul > li {
+    padding: 20px;
 }
 
 /* Configurações do rodapé */
