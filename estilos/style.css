@@ -14,7 +14,7 @@ body, html {
 /* Configurações do cabeçalho */
 
 header {
-    background-image: linear-gradient(to right, #800080, #000000);
+    background-image: linear-gradient(to right, #490283, #000000);
     height: 150px;
 }
 
@@ -24,7 +24,7 @@ menu {
     position: relative;
     top: 122px;
     display: block;
-    background-color: #800080;
+    background-color: #490283;
     list-style-type: none;
     text-align: center
 }
@@ -34,7 +34,7 @@ menu {
 }
 
 menu > ul#opcoes {
-    background-image: linear-gradient(to right, #800080, #000000);
+    background-image: linear-gradient(to right, #490283, #000000);
     box-sizing: border-box;
     display: none;
 }
@@ -42,11 +42,11 @@ menu > ul#opcoes {
 menu > ul > li {
     margin-bottom: 5px;
     padding: 5px;
-    background-color: rgb(66, 66, 66);  
+    background-color: #424242;  
 }
 
 menu > ul > li:hover {
-    background-color: rgb(168, 168, 168);
+    background-color: #a8a8a8;
 }
 
 menu > ul > li > a {
@@ -69,6 +69,9 @@ main {
     left: 90%;
     z-index: 1;
     cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
 }
  /* Configurações das seções */
 
@@ -80,8 +83,7 @@ main .secoes {
     border-radius: 8px;
     box-shadow: 1px 1px 2px black;
     opacity: .75;
-    text-align: center;
-    box-shadow: 1px 1px 2px black;
+    text-align: center; 
 }
 
 main .secoes > h1 {
@@ -109,12 +111,19 @@ section > img:hover {
     margin: auto;
 }
 
-#projetos > ul > li {
-    padding: 20px;
+#projetos > ul > li { 
+    padding-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #000000;
 }
 
-#projetos > ul > li > p {
+#projetos > ul > li > h2 {
     padding: 10px;
+    margin-bottom: 10px;
+    background-color:#490283;
+    color: white;
 }
 
 /* Configurações do rodapé */
