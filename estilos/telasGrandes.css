@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media  screen and (min-width: 768px) {
+    main .secoes {
+        margin: 20px auto;
+        max-width: 992px;
+    }
+
+    #praCima {
+        position: sticky;
+        top: 80vh;
+        left: 83%;
+        z-index: 1;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        border-radius: 3px;
+    }
+    
+}
