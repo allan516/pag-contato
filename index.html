@@ -20,9 +20,9 @@
 
                 <li><a href="#quemSouEu">Quem sou eu</a></li>
 
-                <li><a href="#projetos">Projetos</a></li>
+                <li id="sumir"><a href="#projetos">Projetos</a></li>
 
-                <li><a href="#contato">Contato</a></li>
+                <li id="sumirContato"><a href="#contato">Contato</a></li>
 
                 <li><a href="https://github.com/allan516?tab=repositories" target="_blank" rel="external">GitHub</a></li>
 
@@ -35,7 +35,7 @@
         <a href="#cabecalho"><span class="material-symbols-outlined" id="praCima">arrow_upward_alt</span></a>
         
 
-        <section id="quemSouEu" class="secoes">
+        <section id="quemSouEu" class="perfil">
             <img class="fotoPerfil" src="imagens/foto.png" alt="foto de apresentação">
             <h1>Olá,</h1>
             <p>
@@ -116,7 +116,7 @@
 
         <section id="contato" class="secoes">
             <h1>Contato</h1>
-            <form action="mensagem.php" method="post">
+             <form action="mensagem.php" method="post">
                 <fieldset>
                     <legend>Contato</legend>
                     <label for="iemail">Email </label>
@@ -135,18 +135,40 @@
 
     <script>
         let menuVisivel = false;
+        let sectionVisivel = false;
+        let contatoVisivel  = false;
 
         botaoMenu.addEventListener('click', function() {
             if (menuVisivel) {
                 opcoes.style.display = 'none';
-                cabecalho.style.height = '150px';
+                cabecalho.style.height = '78px';
                 menuVisivel = false;
             } else {
                 opcoes.style.display = 'block';
-                cabecalho.style.height = '315px';
+                cabecalho.style.height = '243px';
                 menuVisivel = true;
             }
-        })
+        });
+
+        sumir.addEventListener('click', function() {
+            if (sectionVisivel) {
+                projetos.style.display = 'none';
+                sectionVisivel = false;
+            } else {
+                projetos.style.display = 'block';
+                sectionVisivel = true;
+            }
+        });
+
+        sumirContato.addEventListener('click', function() {
+            if (contatoVisivel) {
+                contato.style.display = 'none';
+                contatoVisivel = false;
+            } else {
+                contato.style.display = 'block';
+                contatoVisivel = true;
+            }
+        });
 
         
     </script>
