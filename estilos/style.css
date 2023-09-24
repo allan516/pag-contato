@@ -8,6 +8,7 @@
 
 body, html {
     width: 100%;
+    max-height: 800px;
     background-color: black;
 }
 
@@ -57,7 +58,7 @@ menu > ul > li > a {
 
 main {
     position: relative;
-    min-height: 683px;
+    min-height: 799px;
     background: url(../imagens/fundo.jpg) no-repeat left bottom;
     width: 100%; 
     background-size: cover;
@@ -108,12 +109,8 @@ main .secoes > h1 {
 section > .fotoPerfil {
     display: block;
     margin: 15px auto;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-section > img:hover {
     border: 3px solid white;
+    border-radius: 50%;
 }
 
 /* config projetos */
@@ -153,7 +150,6 @@ section > img:hover {
 
 footer {
     width: 100%;
-    height: 130px;
     background-color: black;
 }
 
@@ -161,5 +157,5 @@ footer > p {
     color: white;
     font-style: italic; 
     text-align: center;
-    padding: 20px;   
+    padding: 10px;   
 }
