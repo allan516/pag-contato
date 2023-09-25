@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header id="cabecalho">
         <menu>           
             <li><span id="botaoMenu" class="material-symbols-outlined">menu</span></li>
@@ -138,9 +138,16 @@
         let sectionVisivel = false;
         let contatoVisivel  = false;
 
+        function mudouTamanho() {
+            if (window.innerWidth >= 992) {
+                cabecalho.style.height = '78px';
+            } else {
+                abecalho.style.height = '243px';
+            }
+        }
+    
         botaoMenu.addEventListener('click', function() {
             if (menuVisivel) {
-                opcoes.style.display = 'none';
                 cabecalho.style.height = '78px';
                 menuVisivel = false;
             } else {
@@ -169,7 +176,7 @@
                 contatoVisivel = true;
             }
         });
-        
+
     </script>
 </body>
 </html>
