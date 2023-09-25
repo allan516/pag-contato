@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media  screen and (min-width: 768px) {
+@media  screen and (min-width: 768px) and (max-width: 992px) {
     main .secoes {
         margin: 20px auto;
         max-width: 992px;
@@ -27,3 +27,45 @@
     }
     
 }
+
+@media screen and (min-width: 992px) {
+
+    menu {
+        position: relative;
+        top: 50px;
+        display: inline-block; 
+    }
+    
+    #botaoMenu {
+        display: none;
+    }
+    
+    menu > ul#opcoes {
+        background-image: linear-gradient(to right, #490283, #000000);
+        display: block;
+    }
+    
+    menu > ul > li {
+        background-color: initial; 
+        border-radius: 3px;    
+    }
+    
+    menu > ul > li:hover {
+        background-color: #a8a8a8;     
+    }
+    
+    menu > ul > li > a {
+        font-size: 1em;
+        color: white;
+    }
+
+    menu > ul {
+        columns: 5;
+        list-style-type: none;
+    }
+
+    #projetos {
+       margin: auto;
+    }
+}
+
