@@ -40,7 +40,7 @@
             <h1>Olá,</h1>
             <p>
                 Seja bem vindo(a) ao meu Portifólio.
-                Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas linguagens em que estou trabalhando
+                Aqui você irá encontrar um pouco da minha trajetória, alguns exercícios, projetos e as últimas linguagens em que estou trabalhando .
             </p>
                 
         </section>
@@ -116,13 +116,17 @@
 
         <section id="contato" class="secoes">
             <h1>Contato</h1>
-             <form action="mensagem.php" method="post">
+             <form action="https://api.staticforms.xyz/submit" method="post" autocomplete="on">
+                <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
+                <input type="hidden" name="redirectTo" value="https://allan516.github.io/pag-contato/">
                 <fieldset>
                     <legend>Contato</legend>
+                    <label for="inome">Nome </label>
+                    <input type="text" name="name" id="inome" placeholder=" Seu nome aqui" required autocomplete="name"><br>
                     <label for="iemail">Email </label>
-                    <input type="email" name="email" id="iemail">
+                    <input type="email" name="email" id="iemail" placeholder=" Email" required autocomplete="email"><br>
                     <label for="itext">Mensagem</label>
-                    <textarea name="text" id="itext" cols="30" rows="5"></textarea>
+                    <textarea name="message" id="itext" cols="30" rows="5" required minlength="10" maxlength="300"></textarea><br>
                     <input type="submit" value="Enviar">
                 </fieldset>
             </form>
@@ -141,9 +145,7 @@
         function mudouTamanho() {
             if (window.innerWidth >= 992) {
                 cabecalho.style.height = '78px';
-            } else {
-                abecalho.style.height = '243px';
-            }
+            } 
         }
     
         botaoMenu.addEventListener('click', function() {

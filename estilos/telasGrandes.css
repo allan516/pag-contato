@@ -26,11 +26,15 @@
         overflow: hidden;
         background-color: #000000;
     }
-    
+
 }
 
 @media screen and (min-width: 992px) {
 
+    main .secoes {
+        margin: 20px auto;
+    }
+    
     menu {
         position: relative;
         top: 50px;

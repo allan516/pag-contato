@@ -145,6 +145,14 @@ section > .fotoPerfil {
 
 #contato {
     display: none;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea, label {
+    margin: 10px;
+    display: block;
+    text-align: left;
 }
 
 /* Configurações do rodapé */
