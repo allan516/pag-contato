@@ -145,8 +145,8 @@ section > .fotoPerfil {
 
 #contato {
     display: none;
-    max-width: 500px;
-    margin: auto;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 input, textarea, label {
