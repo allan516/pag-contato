@@ -116,9 +116,15 @@ section > .fotoPerfil {
 /* config projetos */
 
 #projetos {
-    display: none;
+    display: none; 
 }
 
+#projetos > ul > li > p {
+    color: white;
+    padding: 8px;
+    text-align: justify;
+    text-indent: 20px;
+}
 #projetos > ul {
     list-style-type: none;
     display: block;
