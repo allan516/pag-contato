@@ -77,11 +77,10 @@ main {
 main .secoes {
     max-width: 1000px;
     padding: 20px;
-    background-color: lightgray;
+    background-color:white;
     margin: 20px 5px;
     border-radius: 8px;
     box-shadow: 1px 1px 2px black;
-    opacity: .75;
     text-align: center; 
     
 }
@@ -100,21 +99,16 @@ main .perfil {
     text-align: center; 
 }
 
-main .secoes > h1 {
-    padding: 15px;
-}
-
 section > .fotoPerfil {
     display: block;
     margin: 15px auto;
     border: 3px solid white;
     border-radius: 50%;
 }
-
 /* config projetos */
 
 #projetos {
-    display: none; 
+    display: none;
 }
 
 #projetos > ul > li > p {
@@ -148,15 +142,41 @@ section > .fotoPerfil {
 /* Configurações Contato */
 
 #contato {
-    display: none;
-    max-width: 800px;
-    margin: 20px auto;
+  display: none;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
+fieldset {
+  border: none;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.enviar {
+  background-color: #420283; 
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.enviar:hover{
+  background-color: mediumpurple; 
+}
 input, textarea, label {
-    margin: 10px;
-    display: block;
-    text-align: left;
+  margin: 10px;
+}
+.mensagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* Configurações do rodapé */
