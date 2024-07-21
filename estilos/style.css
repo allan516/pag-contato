@@ -169,6 +169,9 @@ footer {
 }
 
 footer > p {
+    display: flex;
+    justify-content: center;
+    item-align: center;
     color: white;
     font-style: italic; 
     text-align: center;
