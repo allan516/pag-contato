@@ -139,14 +139,20 @@
                 <input type="hidden" name="accessKey" value="b772f828-0b80-4715-9595-e247ed7ae22d">
                 <input type="hidden" name="redirectTo" value="https://allan516.github.io/pag-contato/">
                 <fieldset>
-                    <legend>Contato</legend>
-                    <label for="inome">Nome </label>
-                    <input type="text" name="name" id="inome" placeholder=" Seu nome aqui" required autocomplete="name"><br>
-                    <label for="iemail">Email </label>
-                    <input type="email" name="email" id="iemail" placeholder=" Email" required autocomplete="email"><br>
-                    <label for="itext">Mensagem</label>
-                    <textarea name="message" id="itext" cols="30" rows="5" required minlength="10" maxlength="300"></textarea><br>
-                    <input type="submit" value="Enviar">
+                    <span>
+                      <label for="inome">Nome </label>
+                      <input type="text" name="name" id="inome" placeholder=" Seu nome" required autocomplete="name">
+                    </span> <br>
+                    
+                    <span>
+                      <label for="iemail">Email </label>
+                      <input type="email" name="email" id="iemail" placeholder=" Email" required autocomplete="email">
+                    </span><br>
+                    <span class="mensagem">
+                      <label for="itext">Mensagem</label>
+                      <textarea name="message" id="itext" rows="3" required minlength="10" maxlength="300"></textarea>
+                    </span><br>
+                    <input type="submit" class="enviar" value="Enviar">
                 </fieldset>
             </form>
         </section>
