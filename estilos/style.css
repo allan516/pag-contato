@@ -59,7 +59,7 @@ main {
     position: relative;
     min-height: 799px;
     background: url(../imagens/fundo.jpg) no-repeat left bottom;
-    padding: 10px 10px 50px 10px;
+    padding: 10px 10px 65px 10px;
     background-size: cover;
     margin-bottom: 0px;
 }
