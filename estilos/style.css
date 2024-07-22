@@ -8,7 +8,7 @@
 
 body, html {
     background-color: black;
-    max-heigth: 800px;
+    height: 100vh;
 }
 
 /* Configurações do cabeçalho */
